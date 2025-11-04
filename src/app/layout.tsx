@@ -48,15 +48,15 @@ export const metadata: Metadata = {
     canonical: "https://alexandr-antonov.dev",
   },
 
-  manifest: "/Portfolio/manifest.json",
+  manifest: "/manifest.json",
 
   icons: {
-    icon: "/Portfolio/og.png",
-    shortcut: "/Portfolio/og.png",
-    apple: "/Portfolio/og.png",
+    icon: "/og.png",
+    shortcut: "/og.png",
+    apple: "/og.png",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "/Portfolio/og.png",
+      url: "/og.png",
     },
   },
 
