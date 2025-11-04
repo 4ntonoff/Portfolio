@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://asharib.xyz/sitemap.xml
+Sitemap: https://alexandr-antonov.dev/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

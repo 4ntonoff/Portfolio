@@ -1,7 +1,7 @@
 {
-  "name": "Asharib Ali - AI & Blockchain Developer Portfolio",
-  "short_name": "Asharib Ali",
-  "description": "CTO at EduHub, AI & Blockchain Developer, and Lead Teacher at GIAIC. Teaching 1,500+ students Cloud Native & Agentic AI.",
+  "name": "Alexandr Antonov - Frontend Developer Portfolio",
+  "short_name": "Alexandr Antonov",
+  "description": "Frontend Developer with 3+ years of experience building scalable React & TypeScript applications. Expert in performance optimization and e-commerce solutions.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
@@ -15,7 +15,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["technology", "education", "portfolio"],
+  "categories": ["technology", "portfolio"],
   "lang": "en-US",
   "dir": "ltr",
   "scope": "/",
@@ -23,20 +23,8 @@
     {
       "name": "View Portfolio",
       "short_name": "Portfolio",
-      "description": "View Asharib Ali's full portfolio",
+      "description": "View Alexandr Antonov's full portfolio",
       "url": "/",
-      "icons": [
-        {
-          "src": "/og.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "Get Profile Data",
-      "short_name": "API",
-      "description": "Access portfolio data via API",
-      "url": "/api/profile",
       "icons": [
         {
           "src": "/og.png",
