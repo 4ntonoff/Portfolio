@@ -1,8 +1,8 @@
 {
   "name": "Alexandr Antonov",
   "initials": "AA",
-  "location": "UTC+2 Timezone 🇲🇩",
-  "locationLink": "https://www.google.com/maps/place/Moldova",
+  "location": "Remote",
+  "locationLink": "https://github.com/4ntonoff",
   "about": "Front-End Developer specializing in scalable React & TypeScript applications",
   "summary": "Detail-oriented Front-End developer with 3+ years of experience in large-scale e-commerce and startup environments. I specialize in building high-performing, scalable web applications using React and TypeScript. Demonstrated impact on architecture modernization, delivery speed, and user engagement. Open to remote work in international teams (EU/US).",
   "keyHighlights": [
@@ -31,7 +31,8 @@
   "personalWebsiteUrl": "https://alexandr-antonov.dev",
   "contact": {
     "email": "alexandr.antonov.dev@gmail.com",
-    "phone": "+373 79 979 101",
+    "phone": "",
+    "resumeUrl": "/resume.pdf",
     "social": [
       {
         "name": "LinkedIn",

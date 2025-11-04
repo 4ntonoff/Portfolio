@@ -114,6 +114,7 @@ export interface ResumeDataStructure {
   contact: {
     email: string;
     phone?: string;
+    resumeUrl?: string;
     social: SocialLink[];
   };
   education: Education[];

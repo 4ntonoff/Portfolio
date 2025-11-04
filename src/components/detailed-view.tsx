@@ -10,6 +10,7 @@ import {
   MailIcon,
   ArrowRightIcon,
   ExternalLinkIcon,
+  DownloadIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
@@ -61,6 +62,18 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
                     <MailIcon className="h-4 w-4" />
                   </a>
                 </Button>
+              {data.contact.resumeUrl ? (
+                <Button
+                  className="h-8 w-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={data.contact.resumeUrl} download>
+                    <DownloadIcon className="h-4 w-4" />
+                  </a>
+                </Button>
+              ) : null}
               ) : null}
               {data.contact.social.map((social) => (
                 <Button
