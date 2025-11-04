@@ -24,7 +24,7 @@ export function ViewSwitch({
   return (
     <div className="flex flex-col items-center">
       <NeonButton onClick={() => onChange("detailed")}>
-        Continue
+        Lets Go
         <ArrowRight className="h-4 w-4" />
       </NeonButton>
     </div>
