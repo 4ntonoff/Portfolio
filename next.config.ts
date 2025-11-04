@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
   trailingSlash: true,
 };
 
