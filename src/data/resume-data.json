@@ -1,0 +1,309 @@
+{
+  "name": "Alexandr Antonov",
+  "initials": "AA",
+  "location": "UTC+2 Timezone 🇲🇩",
+  "locationLink": "https://www.google.com/maps/place/Moldova",
+  "about": "Front-End Developer specializing in scalable React & TypeScript applications",
+  "summary": "Detail-oriented Front-End developer with 3+ years of experience in large-scale e-commerce and startup environments. I specialize in building high-performing, scalable web applications using React and TypeScript. Demonstrated impact on architecture modernization, delivery speed, and user engagement. Open to remote work in international teams (EU/US).",
+  "keyHighlights": [
+    {
+      "title": "3+ Years Experience",
+      "description": "Frontend development in e-commerce and startups",
+      "icon": "💼"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "25%+ rendering improvements",
+      "icon": "⚡"
+    },
+    {
+      "title": "TypeScript Migration",
+      "description": "40% bug reduction at Zalando",
+      "icon": "🔧"
+    },
+    {
+      "title": "Micro-frontends",
+      "description": "26% build time reduction",
+      "icon": "🏗️"
+    }
+  ],
+  "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=AA",
+  "personalWebsiteUrl": "https://alexandr-antonov.dev",
+  "contact": {
+    "email": "alexandr.antonov.dev@gmail.com",
+    "phone": "+373 79 979 101",
+    "social": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/alexandr-antonov/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/4ntonoff"
+      },
+      {
+        "name": "Telegram",
+        "url": "https://t.me/alexandr_antonov"
+      }
+    ]
+  },
+  "education": [
+    {
+      "school": "Gheorghe Asachi Technical University of Iași",
+      "degree": "B.Sc. in Computer Science",
+      "start": "2021",
+      "end": "2025",
+      "location": "Iași, Romania",
+      "description": "Academic Coursework: Algorithms, Data Structures, Web Technologies, Databases, Software Engineering. Developed multiple academic and independent projects using React, TypeScript, and SQL.",
+      "gpa": "3.7 / 4.0"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "1st Place – Tekwill National Contest (Web Development, 2023)",
+      "reference": [
+        {
+          "name": "🏆 Reference",
+          "url": "https://tekwill.md"
+        }
+      ]
+    },
+    {
+      "title": "Refactored legacy React codebase to TypeScript at Zalando",
+      "description": "Reduced bugs by 40% and maintenance time by 35%",
+      "reference": [
+        {
+          "name": "📊 Case Study",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Migrated monolithic app to micro-frontends at Crawless",
+      "description": "Reduced cold build time by 26%",
+      "reference": [
+        {
+          "name": "🚀 Details",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "title": "FitLife React Native App Launch",
+      "description": "Achieved 95%+ user satisfaction with 10,000+ users supported",
+      "reference": [
+        {
+          "name": "📱 App",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Zalando SE",
+      "link": "https://www.zalando.com",
+      "badges": ["Remote", "Full-Time", "Berlin"],
+      "title": "Frontend Developer",
+      "start": "January 2024",
+      "end": "September 2025",
+      "description": "A leading European e-commerce platform in the fashion and lifestyle sector.",
+      "bulletPoints": [
+        {
+          "text": "Refactored legacy React codebase to TypeScript, reducing bugs by 40% and cutting maintenance time by 35%"
+        },
+        {
+          "text": "Connected REST APIs to Vite components, improving rendering performance by 25%"
+        },
+        {
+          "text": "Increased the number of unit tests from 4678 to 5150 to improve code reliability"
+        },
+        {
+          "text": "Collaborated remotely with 4 cross-functional teams using Agile methodology"
+        },
+        {
+          "text": "Implemented accessibility improvements achieving WCAG 2.1 AA compliance"
+        }
+      ]
+    },
+    {
+      "company": "Crawless",
+      "link": "https://crawless.com",
+      "badges": ["Remote", "Full-Time", "Singapore"],
+      "title": "Web Developer",
+      "start": "September 2022",
+      "end": "November 2023",
+      "description": "A Singapore startup specializing in building web and automation solutions for small and medium-sized businesses.",
+      "bulletPoints": [
+        {
+          "text": "Migrated the application from a monolithic architecture to micro-frontends, reducing cold build time by 26%"
+        },
+        {
+          "text": "Reduced code review time by 44% by creating a corporate code style and integrating linter to CI"
+        },
+        {
+          "text": "Created reusable React + TypeScript UI components, speeding up development and simplifying maintenance"
+        },
+        {
+          "text": "Worked in Agile sprints, reviewed code, and improved CI/CD pipelines for faster release of updates"
+        },
+        {
+          "text": "Optimized bundle size by 35% through code splitting and lazy loading"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "FitLife - React Native Fitness App",
+      "description": "A personalized fitness app based on artificial intelligence with adaptive training plans.",
+      "tags": ["React Native", "AI", "TypeScript", "Firebase"],
+      "link": "https://github.com/4ntonoff/fitlife",
+      "bulletPoints": [
+        {
+          "text": "Created and launched a React Native app featuring adaptive training plans generated using artificial intelligence"
+        },
+        {
+          "text": "Developed modular code and adaptive layouts to ensure the app could be scaled to support over 10,000 users"
+        },
+        {
+          "text": "Implemented secure local storage, user profile management, and real-time UI interaction"
+        },
+        {
+          "text": "Achieved over 95% user satisfaction rating"
+        }
+      ]
+    },
+    {
+      "title": "E-Commerce Performance Optimization",
+      "description": "Optimized large-scale e-commerce platform resulting in significant performance gains.",
+      "tags": ["React", "TypeScript", "Performance", "Vite"],
+      "bulletPoints": [
+        {
+          "text": "Improved rendering performance by 25% through component optimization"
+        },
+        {
+          "text": "Reduced Time to Interactive (TTI) by 40%"
+        },
+        {
+          "text": "Implemented lazy loading and code splitting strategies"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "items": [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+        "SCSS/SASS"
+      ]
+    },
+    {
+      "name": "Frontend Frameworks & Libraries",
+      "items": [
+        "React",
+        "React Native",
+        "Next.js",
+        "Vue.js",
+        "Tailwind CSS",
+        "Material UI",
+        "Redux",
+        "MobX"
+      ]
+    },
+    {
+      "name": "Tools & Build Systems",
+      "items": [
+        "Vite",
+        "Webpack",
+        "npm",
+        "pnpm",
+        "Git",
+        "Docker"
+      ]
+    },
+    {
+      "name": "API & Data",
+      "items": [
+        "REST API",
+        "GraphQL",
+        "Node.js",
+        "MySQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Testing & Quality",
+      "items": [
+        "Jest",
+        "Cypress",
+        "Unit Testing",
+        "Integration Testing",
+        "Testing Library"
+      ]
+    },
+    {
+      "name": "DevOps & CI/CD",
+      "items": [
+        "CI/CD Pipelines",
+        "Docker",
+        "Git",
+        "GitHub Actions",
+        "AWS",
+        "Agile/SCRUM"
+      ]
+    },
+    {
+      "name": "Other Skills",
+      "items": [
+        "Performance Optimization",
+        "Accessibility (a11y)",
+        "Responsive Design",
+        "Mobile-first UX",
+        "Code Review",
+        "Team Leadership"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "B2+ (Upper Intermediate)",
+      "proficiency": 80
+    },
+    {
+      "name": "Russian",
+      "level": "Native",
+      "proficiency": 100
+    },
+    {
+      "name": "Romanian",
+      "level": "Native",
+      "proficiency": 100
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Advanced React Development",
+      "issuer": "Tech Academy",
+      "date": "2023",
+      "credential": "https://example.com/cert-react"
+    },
+    {
+      "name": "TypeScript Mastery",
+      "issuer": "Frontend Masters",
+      "date": "2023",
+      "credential": "https://example.com/cert-ts"
+    },
+    {
+      "name": "Web Performance Optimization",
+      "issuer": "Pluralsight",
+      "date": "2024",
+      "credential": "https://example.com/cert-perf"
+    }
+  ]
+}
