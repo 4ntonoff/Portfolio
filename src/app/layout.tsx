@@ -61,34 +61,18 @@ export const metadata: Metadata = {
   },
 
   keywords: [
-    "Asharib Ali",
-    "AI Engineer",
-    "Blockchain Developer",
-    "Full Stack Developer",
-    "Agentic AI",
-    "Cloud Native",
-    "EduHub CTO",
-    "EduChain",
-    "GIAIC Teacher",
-    "Tech Educator Pakistan",
-    "AI Education",
-    "Blockchain Education",
-    "Web3 Developer",
-    "Solidity Developer",
-    "Next.js Developer",
+    "Alexandr Antonov",
+    "Frontend Developer",
+    "React Developer",
     "TypeScript Developer",
-    "Python Developer",
-    "Tech Community Manager",
-    "Programming Instructor",
-    "Open Source Contributor",
-    "Hackathon Winner",
-    "GIAIC",
-    "PIAIC",
-    "Panaverse",
+    "Next.js Developer",
+    "Web Developer",
+    "Performance Optimization",
+    "E-commerce Developer",
   ],
-  authors: [{ name: "Asharib Ali", url: "https://asharib.xyz" }],
-  creator: "Asharib Ali",
-  publisher: "Asharib Ali",
+  authors: [{ name: "Alexandr Antonov", url: "https://alexandr-antonov.dev" }],
+  creator: "Alexandr Antonov",
+  publisher: "Alexandr Antonov",
   category: "Technology",
 
   robots: {
@@ -116,7 +100,7 @@ export const metadata: Metadata = {
 
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "apple-mobile-web-app-title": "Asharib Ali",
+    "apple-mobile-web-app-title": "Alexandr Antonov",
 
     "msapplication-TileColor": "#000000",
     "msapplication-TileImage": "/og.png",
@@ -125,7 +109,7 @@ export const metadata: Metadata = {
     "msapplication-navbutton-color": "#000000",
 
     "mobile-web-app-capable": "yes",
-    "application-name": "Asharib Ali Portfolio",
+    "application-name": "Alexandr Antonov Portfolio",
     "format-detection": "telephone=no",
   },
 };
@@ -143,48 +127,19 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Asharib Ali",
-    url: "https://asharib.xyz",
-    image: "https://avatars.githubusercontent.com/u/102221198?v=4",
+    name: "Alexandr Antonov",
+    url: "https://alexandr-antonov.dev",
+    image: "/og.png",
     sameAs: [
-      "https://github.com/AsharibAli",
-      "https://www.linkedin.com/in/asharibali/",
-      "https://x.com/0xAsharib",
-      "https://asharibali.medium.com/",
-      "https://www.youtube.com/@0xAsharib",
+      "https://github.com/4ntonoff",
     ],
-    jobTitle: "Chief Technology Officer",
-    worksFor: {
-      "@type": "Organization",
-      name: "EduHub",
-      url: "https://eduhub.dev/",
-    },
-    alumniOf: [
-      {
-        "@type": "EducationalOrganization",
-        name: "PIAIC",
-      },
-    ],
-    knowsAbout: [
-      "Artificial Intelligence",
-      "Blockchain Technology",
-      "Full Stack Development",
-      "Cloud Native Development",
-      "Agentic AI",
-      "Web3",
-      "Solidity",
-      "TypeScript",
-      "Python",
-      "React",
-      "Next.js",
-    ],
+    jobTitle: "Frontend Developer",
     description:
-      "CTO at EduHub, AI & Blockchain Developer, and Lead Teacher at GIAIC. Teaching 1,500+ students Cloud Native & Agentic AI with 3+ years of tech experience.",
+      "Frontend Developer with 3+ years experience building scalable React & TypeScript applications.",
     address: {
       "@type": "PostalAddress",
-      addressCountry: "Pakistan",
+      addressCountry: "Moldova",
     },
-    email: "contact@asharib.xyz",
   };
 
   return (
