@@ -41,18 +41,13 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Create .nojekyll
+        run: touch out/.nojekyll
+
       - name: Check build output
         run: |
-          echo "Current directory contents:"
-          ls -la
-          echo "Checking for out directory:"
-          if [ -d "out" ]; then
-            echo "out directory exists"
-            ls -la out/
-          else
-            echo "out directory does not exist"
-            exit 1
-          fi
+          echo "Contents of out directory:"
+          ls -la out/ | head -20
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
