@@ -46,9 +46,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://alexandr-antonov.dev"),
   alternates: {
     canonical: "https://alexandr-antonov.dev",
-    types: {
-      "application/json": "/api/profile",
-    },
   },
 
   manifest: "/manifest.json",

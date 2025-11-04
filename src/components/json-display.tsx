@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { CopyIcon, CheckIcon, DownloadIcon, ExternalLinkIcon } from "lucide-react";
+import { CopyIcon, CheckIcon, DownloadIcon } from "lucide-react";
 
 interface JsonDisplayProps {
   data: any;
@@ -47,11 +47,6 @@ export function JsonDisplay({ data, title = "API Data" }: JsonDisplayProps) {
     URL.revokeObjectURL(url);
   };
 
-  // Function to open API route in new tab
-  const openApiRoute = () => {
-    window.open("/api/profile", "_blank");
-  };
-
   return (
     <div className="mx-auto w-full max-w-6xl space-y-3 sm:space-y-4">
       {/* Header with title and action buttons */}
@@ -80,17 +75,6 @@ export function JsonDisplay({ data, title = "API Data" }: JsonDisplayProps) {
                 )}
               </Button>
 
-              {/* API Route button */}
-              <Button
-                onClick={openApiRoute}
-                variant="outline"
-                size="sm"
-                className="flex items-center gap-1 md:gap-2 border-gray-700 text-white hover:bg-gray-800 text-xs md:text-sm px-2 py-1 md:px-4 md:py-2"
-              >
-                <ExternalLinkIcon className="h-3 w-3 md:h-4 md:w-4" />
-                <span>API Route</span>
-              </Button>
-              
               {/* Download button */}
               <Button
                 onClick={downloadJson}

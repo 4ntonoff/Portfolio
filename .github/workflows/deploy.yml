@@ -33,11 +33,6 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -45,6 +40,19 @@ jobs:
         run: pnpm run export
         env:
           NODE_ENV: production
+
+      - name: Check build output
+        run: |
+          echo "Current directory contents:"
+          ls -la
+          echo "Checking for out directory:"
+          if [ -d "out" ]; then
+            echo "out directory exists"
+            ls -la out/
+          else
+            echo "out directory does not exist"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -61,4 +69,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
