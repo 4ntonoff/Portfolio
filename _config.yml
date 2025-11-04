@@ -1,0 +1,8 @@
+strict_variables: false
+strict_filters: false
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+
