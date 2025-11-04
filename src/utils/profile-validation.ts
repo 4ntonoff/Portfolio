@@ -169,7 +169,7 @@ export function validateAndFixData(data: ResumeData): ResumeData {
 
   // Ensure arrays exist
   if (!fixed.contact) {
-    fixed.contact = { email: "", phone: "", social: [] };
+    fixed.contact = { email: "", phone: "", resumeUrl: "", social: [] };
   }
   if (!fixed.contact.social) fixed.contact.social = [];
   if (!fixed.education) fixed.education = [];

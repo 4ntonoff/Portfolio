@@ -75,6 +75,18 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
                 </Button>
               ) : null}
               ) : null}
+              {data.contact.resumeUrl ? (
+                <Button
+                  className="h-8 w-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={data.contact.resumeUrl} download>
+                    <DownloadIcon className="h-4 w-4" />
+                  </a>
+                </Button>
+              ) : null}
               {data.contact.social.map((social) => (
                 <Button
                   key={social.name}

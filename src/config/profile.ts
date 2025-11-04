@@ -21,9 +21,7 @@ export const profileConfig = {
   socials: {
     linkedin: "https://www.linkedin.com/in/alexandr-antonov/",
     github: "https://github.com/alexandr-antonov",
-    telegram: "https://t.me/alexandr_antonov",
-    twitter: "https://x.com/alexandr_dev",
-    medium: "https://medium.com/@alexandr-antonov",
+    telegram: "https://t.me/byoneet",
   },
 
   // Website

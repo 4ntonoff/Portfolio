@@ -27,7 +27,7 @@
       "icon": "🏗️"
     }
   ],
-  "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=AA",
+  "avatarUrl": "/profilePicture.jpg",
   "personalWebsiteUrl": "https://alexandr-antonov.dev",
   "contact": {
     "email": "alexandr.antonov.dev@gmail.com",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Telegram",
-        "url": "https://t.me/alexandr_antonov"
+        "url": "https://t.me/byoneet"
       }
     ]
   },
