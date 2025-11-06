@@ -16,27 +16,27 @@ interface Props {
 
 export function ProjectCard({ title, description, tags, link }: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-gray-800/50 p-4 hover:border-gray-700 transition-all duration-300">
+    <Card className="flex flex-col overflow-hidden bg-black/40 backdrop-blur-md border border-white/20 p-4 hover:bg-black/50 transition-all duration-300 print:bg-white print:border-gray-300">
       <CardHeader className="pb-3">
         <div className="space-y-2">
-          <CardTitle className="text-base font-semibold">
+          <CardTitle className="text-base font-semibold text-white print:text-black">
             {link ? (
               <a
                 href={link}
                 target="_blank"
-                className="inline-flex items-center gap-2 hover:text-blue-400 transition-colors duration-200"
+                className="inline-flex items-center gap-2 hover:text-blue-300 print:hover:text-blue-600 transition-colors duration-200"
               >
                 {title}
-                <span className="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+                <span className="h-1.5 w-1.5 rounded-full bg-green-400"></span>
               </a>
             ) : (
               title
             )}
           </CardTitle>
-          <div className="hidden font-mono text-xs underline print:visible">
+          <div className="hidden font-mono text-xs underline text-gray-300 print:visible print:text-gray-600">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <CardDescription className="font-mono text-xs print:text-[10px]">
+          <CardDescription className="font-mono text-xs text-gray-300 print:text-gray-600 print:text-[10px]">
             {description}
           </CardDescription>
         </div>
@@ -45,8 +45,7 @@ export function ProjectCard({ title, description, tags, link }: Props) {
         <div className="mt-2 flex flex-wrap gap-1">
           {tags.map((tag) => (
             <Badge
-              className="px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-              variant="secondary"
+              className="px-1 py-0 text-[10px] bg-black/50 text-white hover:bg-black/70 print:bg-transparent print:text-black print:border print:border-black print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
               key={tag}
             >
               {tag}

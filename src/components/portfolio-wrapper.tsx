@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ViewSwitch, ViewMode } from "@/components/view-switch";
 import { ShaderAnimation } from "@/components/ui/shader-animation";
+import { DarkVeil } from "@/components/dark-veil-simple";
 import { type ResumeData } from "@/lib/data";
 import { ReactNode } from "react";
 
@@ -55,16 +56,23 @@ export function PortfolioWrapper({
 
   return (
     <div
-      className={`smooth-transition ${isTransitioning ? "fade-out" : "fade-in"}`}
+      className={`smooth-transition min-h-screen w-full ${isTransitioning ? "fade-out" : "fade-in"}`}
     >
-      <div key="detailed-view-wrapper">
+      <div className="fixed inset-0 -z-10 bg-black">
+        <DarkVeil
+          warpAmount={0.4}
+          scanlineIntensity={0.02}
+          speed={0.7}
+          noiseIntensity={0.15}
+        />
+      </div>
+
+
+      <div className="relative z-10">
         {detailedView}
       </div>
 
-      <div
-        key="view-switch-container"
-        className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 transform sm:bottom-8"
-      >
+      <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 transform sm:bottom-8">
         <ViewSwitch currentView={viewMode} onChange={handleViewModeChange} />
       </div>
     </div>
