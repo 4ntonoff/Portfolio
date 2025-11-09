@@ -70,8 +70,11 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply h-full w-full;
+  }
   body {
-    @apply bg-black text-white;
+    @apply bg-black text-white h-full w-full;
   }
 }
 

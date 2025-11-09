@@ -120,7 +120,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={`${inter.className} h-full w-full`}>
       <head>
         <Script
           id="json-ld"
@@ -142,7 +142,7 @@ export default function RootLayout({
   gtag('config', 'G-8CXGRC7T09');
   `}
       </Script>
-      <body>{children}</body>
+      <body className="h-full w-full">{children}</body>
     </html>
   );
 }

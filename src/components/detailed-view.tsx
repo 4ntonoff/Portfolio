@@ -30,9 +30,9 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
   // Add icons to the data on the client side
   const data = useMemo(() => addIconsToResumeData(rawData), [rawData]);
   return (
-    <main className="container relative mx-auto min-h-screen scroll-my-12 overflow-auto p-4 sm:p-6 md:p-16 print:bg-white print:p-12 backdrop-blur-xl">
-      <section className="mx-auto w-full max-w-3xl space-y-10 rounded-2xl backdrop-blur-xl text-white print:bg-white print:text-black">
-        <div className="flex items-start justify-between gap-8 rounded-xl border border-white/20 bg-black/50 p-4 backdrop-blur-md">
+    <main className="container relative mx-auto scroll-my-12 px-4 py-8 sm:px-6 sm:py-12 md:px-16 print:bg-white print:p-12">
+      <section className="mx-auto w-full max-w-3xl space-y-10 text-white print:bg-white print:text-black">
+        <div className="flex items-start justify-between gap-8 rounded-xl border border-white/20 bg-white/10 p-4 backdrop-blur-md">
           <div className="flex-1 space-y-2.5">
             <h1 className="text-3xl font-bold tracking-tight">
               {data.name}
@@ -52,42 +52,43 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
             </p>
 
             <div className="flex flex-col gap-3 pt-4 print:hidden">
-              <div className="flex items-center gap-x-1 font-mono text-sm text-gray-400">
+              <div className="flex items-center gap-2 font-mono text-sm text-gray-400">
                 {data.contact.email ? (
                   <Button
-                    className="h-8 w-8 hover:bg-white/20"
+                    className="h-10 w-10 bg-white/10 border-white/20 hover:bg-white/20 text-white"
                     variant="outline"
                     size="icon"
                     asChild
                   >
-                    <a href={`mailto:${data.contact.email}`}>
-                      <MailIcon className="h-4 w-4" />
+                    <a href={`mailto:${data.contact.email}`} title="Email">
+                      <MailIcon className="h-5 w-5" />
                     </a>
                   </Button>
                 ) : null}
                 {data.contact.social.map((social) => (
                   <Button
                     key={social.name}
-                    className="h-8 w-8 hover:bg-white/20"
+                    className="h-10 w-10 bg-white/10 border-white/20 hover:bg-white/20 text-white"
                     variant="outline"
                     size="icon"
                     asChild
+                    title={social.name}
                   >
-                    <a href={social.url} target="_blank">
-                      <social.icon className="h-4 w-4" />
+                    <a href={social.url} target="_blank" rel="noopener noreferrer">
+                      <social.icon className="h-5 w-5" />
                     </a>
                   </Button>
                 ))}
                 {data.contact.resumeUrl ? (
                   <Button
-                    className="h-8 w-8 hover:bg-white/20 border-white/20"
+                    className="h-10 w-10 bg-white/10 border-white/20 hover:bg-white/20 text-white"
                     variant="outline"
                     size="icon"
                     asChild
                     title="Download Resume"
                   >
                     <a href={data.contact.resumeUrl} download>
-                      <DownloadIcon className="h-4 w-4" />
+                      <DownloadIcon className="h-5 w-5" />
                     </a>
                   </Button>
                 ) : null}
@@ -125,11 +126,11 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
 
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Key Highlights</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 print:grid-cols-4 print:gap-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 print:grid-cols-4 print:gap-2">
             {data.keyHighlights?.map((point) => (
               <Card
                 key={point.title}
-                className="flex flex-col items-start gap-2 bg-black/40 backdrop-blur-md border-white/20 p-4 hover:bg-black/50 transition-colors"
+                className="flex flex-col items-start gap-2 bg-white/10 backdrop-blur-md border-white/20 p-4 hover:bg-white/20 transition-colors"
               >
                 <div className="text-2xl">{point.icon}</div>
                 <div>
@@ -147,7 +148,7 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
           <h2 className="text-xl font-bold">Work Experience</h2>
           {data.work.map((work) => {
             return (
-              <Card key={work.company} className="bg-black/40 backdrop-blur-md border-white/20 hover:bg-black/50 transition-colors">
+              <Card key={work.company} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-colors">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -159,7 +160,7 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
                         {work.badges.map((badge) => (
                           <Badge
                             variant="secondary"
-                            className="align-middle text-xs bg-black/50 text-white hover:bg-black/70 print:px-1 print:py-0.5 print:text-[8px] print:leading-tight print:bg-transparent"
+                            className="align-middle text-xs bg-white/10 text-white hover:bg-white/20 print:px-1 print:py-0.5 print:text-[8px] print:leading-tight print:bg-transparent"
                             key={badge}
                           >
                             {badge}
@@ -236,7 +237,7 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
           <h2 className="text-xl font-bold">Education</h2>
           {data.education.map((education) => {
             return (
-              <Card key={education.school} className="bg-black/40 backdrop-blur-md border-white/20 hover:bg-black/50 transition-colors">
+              <Card key={education.school} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-colors">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="font-semibold leading-none text-white print:text-black">
@@ -265,7 +266,7 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
                 </h3>
                 <div className="flex flex-wrap gap-1">
                   {skillCategory.items.map((skill) => (
-                    <Badge className="bg-black/50 text-white hover:bg-black/70 print:bg-transparent print:text-black print:border print:border-black print:text-[10px]" key={skill}>
+                    <Badge className="bg-white/10 text-white hover:bg-white/20 print:bg-transparent print:text-black print:border print:border-black print:text-[10px]" key={skill}>
                       {skill}
                     </Badge>
                   ))}
@@ -277,7 +278,7 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
 
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
             {data.projects?.map((project) => {
               return (
                 <ProjectCard
@@ -298,7 +299,7 @@ export function DetailedView({ data: rawData }: DetailedViewProps) {
           </h2>
           {data.achievements.map((achievement) => {
             return (
-              <Card key={achievement.title} className="bg-black/40 backdrop-blur-md border-white/20 hover:bg-black/50 transition-colors">
+              <Card key={achievement.title} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-colors">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="flex items-center gap-x-2 font-semibold leading-none text-white print:text-black">

@@ -32,10 +32,10 @@ export function PortfolioWrapper({
 
   if (viewMode === "initial") {
     return (
-      <div className="relative min-h-screen overflow-hidden">
+      <div className="h-screen w-screen overflow-hidden">
         <ShaderAnimation />
 
-        <div className="absolute inset-0 z-10 flex min-h-screen flex-col items-center justify-center px-4 py-8">
+        <div className="absolute inset-0 z-10 flex h-screen flex-col items-center justify-center px-4 py-8">
           <div className="mb-8 text-center">
             <h1 className="mb-6 text-4xl font-bold text-white drop-shadow-lg sm:text-5xl md:text-6xl">
               {data.name}
@@ -55,24 +55,32 @@ export function PortfolioWrapper({
   }
 
   return (
-    <div
-      className={`smooth-transition min-h-screen w-full ${isTransitioning ? "fade-out" : "fade-in"}`}
-    >
-      <div className="fixed inset-0 -z-10 bg-black">
+    <div className="relative w-full" style={{ minHeight: '100vh' }}>
+      {/* Fixed full-screen background animation */}
+      <div className="fixed inset-0 -z-20 bg-black overflow-hidden" style={{ width: '100vw', height: '100vh' }}>
         <DarkVeil
-          warpAmount={0.4}
-          scanlineIntensity={0.02}
-          speed={0.7}
-          noiseIntensity={0.15}
+          speed={1.0}
+          resolutionScale={1.0}
         />
       </div>
 
+      {/* Frosted glass overlay panel */}
+      <div className="fixed inset-0 -z-10 bg-black/30 backdrop-blur-md pointer-events-none"></div>
 
+      {/* Scrollable content */}
       <div className="relative z-10">
-        {detailedView}
+        {/* Transitioning content */}
+        <div
+          className={`smooth-transition ${isTransitioning ? "fade-out" : "fade-in"}`}
+        >
+          {detailedView}
+
+          <div className="h-20" />
+        </div>
       </div>
 
-      <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 transform sm:bottom-8">
+      {/* Fixed button */}
+      <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 transform sm:bottom-8 pointer-events-auto">
         <ViewSwitch currentView={viewMode} onChange={handleViewModeChange} />
       </div>
     </div>

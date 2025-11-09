@@ -16,7 +16,7 @@ interface Props {
 
 export function ProjectCard({ title, description, tags, link }: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden bg-black/40 backdrop-blur-md border border-white/20 p-4 hover:bg-black/50 transition-all duration-300 print:bg-white print:border-gray-300">
+    <Card className="flex flex-col overflow-hidden bg-white/10 backdrop-blur-md border-white/20 p-4 hover:bg-white/20 transition-all duration-300 print:bg-white print:border-gray-300">
       <CardHeader className="pb-3">
         <div className="space-y-2">
           <CardTitle className="text-base font-semibold text-white print:text-black">
@@ -45,7 +45,7 @@ export function ProjectCard({ title, description, tags, link }: Props) {
         <div className="mt-2 flex flex-wrap gap-1">
           {tags.map((tag) => (
             <Badge
-              className="px-1 py-0 text-[10px] bg-black/50 text-white hover:bg-black/70 print:bg-transparent print:text-black print:border print:border-black print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+              className="px-1 py-0 text-[10px] bg-white/10 text-white hover:bg-white/20 print:bg-transparent print:text-black print:border print:border-black print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
               key={tag}
             >
               {tag}
